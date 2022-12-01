@@ -36,10 +36,10 @@ export default function Profil({}: Props): ReactElement {
                     <Link href="#about">
                     <button className="profilButton">Skills</button>
                     </Link>
-                    <Link href="#projects">
+                    <Link href="#Projects">
                     <button className="profilButton">Projets</button>
                     </Link>
-                    <Link href="contact">
+                    <Link href="#contact">
                     <button className="profilButton">Contact</button>
                     </Link>
                 </div>
