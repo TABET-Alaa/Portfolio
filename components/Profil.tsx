@@ -19,7 +19,7 @@ export default function Profil({}: Props): ReactElement {
             <img className="relative rounded-full h-32 w-32 mx-auto object-cover" src="" alt=""/>
             <div className="z-20">
                 <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
-                    Software Engineer
+                    Developpeur web
                 </h2>
 
                 <h1 className="text-5xl lg:text-6xl font-semibold px-10">
@@ -31,13 +31,13 @@ export default function Profil({}: Props): ReactElement {
 
                 <div className="pt-5">
                     <Link href="#about">
-                    <button className="profilButton">About</button>
+                    <button className="profilButton">A propos</button>
                     </Link>
-                    <Link href="skills">
+                    <Link href="#about">
                     <button className="profilButton">Skills</button>
                     </Link>
-                    <Link href="projects">
-                    <button className="profilButton">Projects</button>
+                    <Link href="#projects">
+                    <button className="profilButton">Projets</button>
                     </Link>
                     <Link href="contact">
                     <button className="profilButton">Contact</button>

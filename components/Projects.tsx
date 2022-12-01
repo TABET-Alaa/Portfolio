@@ -10,7 +10,7 @@ function Projects({ }: Props): ReactElement {
 
         <div className="h-screen relative flex flex-col px-10 justify-evenly mx-auto items-center">
 
-            <h1 className="absolute top-24 text-2xl text-gray-500 uppercase tracking-[20px]"> Projects</h1>
+            <h1 className="absolute top-24 text-2xl text-gray-500 uppercase tracking-[20px]"> Projets</h1>
 
 
             <div className="flex space-x-5 items-center ">
@@ -19,7 +19,7 @@ function Projects({ }: Props): ReactElement {
                     className="object-cover w-full mx-6 lg:h-72 w-1/2 rounded-xl"
                 />
                 <div className="">
-                    <p className="text-sm uppercase">Nom Projet</p>
+                    <p className="text-sm uppercase">Home-app</p>
 
                     <a href="" className="inline-block hover:underline lg:mt-8">Voir Projet {' > '} </a>
 
@@ -29,8 +29,8 @@ function Projects({ }: Props): ReactElement {
                     />
                     <div className="mt-3 border border-blue-100 rounded-2xl h-[120px] w-[350px] p-4 bg-[#F7AB0A] ">
                         <p className="text-sm text-black font-bold">A house location website  built with React, NextJs ,Tailwind CSS ,
-                        And Django Rest Framework for the backend
-                            </p>
+                        And Sanity for the content management 
+                        </p>
                     </div>
 
                     <div className="flex space-x-4 mt-4">

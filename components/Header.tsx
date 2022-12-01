@@ -24,11 +24,11 @@ export default function Header({}: Props): ReactElement {
                     fgColor="gray"
                     bgColor="transparent"
                 />
-                <SocialIcon url="https://www.linkedin.com/in/alaaddine-tabet-9010241aa/" 
+                <SocialIcon url="https://github.com/TABET-Alaa" 
                     fgColor="gray"
                     bgColor="transparent"
                 />
-                <SocialIcon url="https://www.linkedin.com/in/alaaddine-tabet-9010241aa/" 
+                <SocialIcon url="https://github.com/TABET-Alaa" 
                     fgColor="gray"
                     bgColor="transparent"
                 />
@@ -51,7 +51,7 @@ export default function Header({}: Props): ReactElement {
                     bgColor="transparent"
                 />
                 <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-                    Get in touch
+                    Contacter Moi
                 </p>
             </motion.div>
         </header>
