@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useState } from 'react'
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid'
 import { useForm, SubmitHandler } from "react-hook-form";
 
@@ -10,10 +10,37 @@ type Inputs = {
 };
 
 function Contact(): ReactElement {
-    const { register, handleSubmit } = useForm<Inputs>();
-    const onSubmit: SubmitHandler<Inputs> = data => {
-        window.location.href = `mailto:alae.tabet02@gmail.com?subject={}&body=Hi, my name is ${data.nom}. ${data.message} . ( ${data.email})
-        }`
+    const [nom, setNom] = useState('');
+    const [email, setEmail] = useState('');
+    const [sujet, setSujet] = useState('');
+    const [message, setMessage] = useState('');
+    const [submitted, setSubmitted] = useState(false)
+
+    const onSubmit = (e: any) => {
+        e.preventDefault();
+        let data = {
+            nom,
+            email,
+            sujet,
+            message
+        }
+        console.log(data)
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/json, text/plain, */*',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          }).then((res) => {
+            console.log('Response received')
+            if (res.status === 200) {
+              console.log('Response succeeded!')
+              setSubmitted(true)
+            }
+          })
+        
+        
     }
     return (
         <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
@@ -48,34 +75,40 @@ function Contact(): ReactElement {
 
                         {/* formulaire  */}
 
-                        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 w-fit mx-auto">
+                        <form className="flex flex-col space-y-2 w-fit mx-auto">
                             <div className="flex space-x-2">
                                 <input
-                                    {...register('nom')}
+                                    onChange={(e) => { setNom(e.target.value)} }
                                     placeholder="Nom/Prenom "
                                     className="contactInput"
                                     type="text"
+                                    name="nom"
                                 />
                                 <input
-                                    {...register('email')}
+                                    onChange={(e) => {setEmail(e.target.value)}}
                                     placeholder="Email"
                                     className="contactInput"
                                     type="text"
+                                    name="email"
                                 />
                             </div>
                             <input
-                                {...register('sujet')}
+                                onChange={(e) => {setSujet(e.target.value)}}
                                 placeholder="Sujet"
                                 className="contactInput"
                                 type="text"
+                                name="sujet"
                             />
                             <textarea
-                                {...register('message')}
+                                onChange={(e) => {setMessage(e.target.value)}}
                                 placeholder="Message"
                                 className="contactInput"
-                                name=""
+                                name="message"
                             />
-                            <button type="submit" className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold">Submit </button>
+                            <button type="submit" 
+                                className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold"
+                                onClick={(e) => {onSubmit(e)}}
+                            >Submit </button>
 
                         </form>
 
