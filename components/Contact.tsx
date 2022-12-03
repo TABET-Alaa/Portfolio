@@ -108,7 +108,7 @@ function Contact(): ReactElement {
                             <button type="submit" 
                                 className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold"
                                 onClick={(e) => {onSubmit(e)}}
-                            >Submit </button>
+                            >Envoyer </button>
 
                         </form>
 
