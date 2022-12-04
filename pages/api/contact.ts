@@ -1,9 +1,7 @@
 
-export default function hundler(req: any, res: any) {
-
-    //require('dotenv').config()
-
-    //const PASSWORD = process.env.password
+export default function (req: any, res: any) {
+    // !!!! faut changer le type 'any' dans les parametres req et res !!
+    // !!!! besoin de configurer les environnements variables pour la securite du mot passe !!!!
     let nodemailer = require('nodemailer')
     const transporter = nodemailer.createTransport({
         port: 465,
@@ -30,5 +28,4 @@ export default function hundler(req: any, res: any) {
           console.log(info)
       })
       res.status(200)
-
 }
