@@ -2,7 +2,7 @@
 export default function hundler(req: any, res: any) {
 
     //require('dotenv').config()
-
+    //test en attendant la configuration des env
     //const PASSWORD = process.env.password
     let nodemailer = require('nodemailer')
     const transporter = nodemailer.createTransport({
