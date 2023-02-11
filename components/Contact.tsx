@@ -48,7 +48,7 @@ function Contact(): ReactElement {
                 Contacter Moi
             </h3>
 
-            <div className="flex flex-col space-y-10">
+            <div className="flex flex-col space-y-10 w-[320px]">
                 <div className="hidden">
                     <h4 className="text-2xl font-light text-center mt-16">
                         Vous méritez plus qu'une simple application Web . Vous méritez une application Web <span className="decoration-[#F7AB0A]/50 underline">rapide </span> et
@@ -77,8 +77,8 @@ function Contact(): ReactElement {
 
                     {/* formulaire  */}
 
-                    <form className="flex flex-col space-y-2 w-fit mx-auto">
-                        <div className="flex space-x-2">
+                    <form className="flex flex-col space-y-2 ">
+                        <div className="flex flex-col space-y-2 md-flex-row md:space-x-2">
                             <input
                                 onChange={(e) => { setNom(e.target.value) }}
                                 placeholder="Nom/Prenom "
