@@ -28,32 +28,34 @@ function Contact(): ReactElement {
         fetch('/api/contact', {
             method: 'POST',
             headers: {
-              'Accept': 'application/json, text/plain, */*',
-              'Content-Type': 'application/json'
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
-          }).then((res) => {
+        }).then((res) => {
             console.log('Response received')
             if (res.status === 200) {
-              console.log('Response succeeded!')
-              setSubmitted(true)
+                console.log('Response succeeded!')
+                setSubmitted(true)
             }
-          })
-        
-        
+        })
+
+
     }
     return (
-        <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+        <div className="h-screen relative flex flex-col text-center md:text-left md:flex-row w-[390px] md:max-w-7xl md:px-10 justify-evenly mx-auto items-center">
             <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
                 Contacter Moi
             </h3>
 
             <div className="flex flex-col space-y-10">
-                <h4 className="text-2xl font-light text-center mt-16">
-                    Vous méritez plus qu'une simple application Web . Vous méritez une application Web <span className="decoration-[#F7AB0A]/50 underline">rapide </span> et
+                <div className="hidden">
+                    <h4 className="text-2xl font-light text-center mt-16">
+                        Vous méritez plus qu'une simple application Web . Vous méritez une application Web <span className="decoration-[#F7AB0A]/50 underline">rapide </span> et
                     <span className="decoration-[#F7AB0A]/50 underline"> fiable</span> . Vous méritez un <span className="decoration-[#F7AB0A]/50 underline">développeur</span> qui peut fournir exactement ce que vous méritez.{" "}
-                </h4>
-                <div className="flex pt-12">
+                    </h4>
+                </div>
+                <div className="flex flex-col md:flex-row pt-12 space-y-7">
 
                     {/* Contact Info */}
                     <div className="space-y-10">
@@ -69,48 +71,48 @@ function Contact(): ReactElement {
                             <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
                             <p className="text-2xl">Mers Sultan , Casablanca</p>
                         </div>
-                        </div>
+                    </div>
 
 
 
-                        {/* formulaire  */}
+                    {/* formulaire  */}
 
-                        <form className="flex flex-col space-y-2 w-fit mx-auto">
-                            <div className="flex space-x-2">
-                                <input
-                                    onChange={(e) => { setNom(e.target.value)} }
-                                    placeholder="Nom/Prenom "
-                                    className="contactInput"
-                                    type="text"
-                                    name="nom"
-                                />
-                                <input
-                                    onChange={(e) => {setEmail(e.target.value)}}
-                                    placeholder="Email"
-                                    className="contactInput"
-                                    type="text"
-                                    name="email"
-                                />
-                            </div>
+                    <form className="flex flex-col space-y-2 w-fit mx-auto">
+                        <div className="flex space-x-2">
                             <input
-                                onChange={(e) => {setSujet(e.target.value)}}
-                                placeholder="Sujet"
+                                onChange={(e) => { setNom(e.target.value) }}
+                                placeholder="Nom/Prenom "
                                 className="contactInput"
                                 type="text"
-                                name="sujet"
+                                name="nom"
                             />
-                            <textarea
-                                onChange={(e) => {setMessage(e.target.value)}}
-                                placeholder="Message"
+                            <input
+                                onChange={(e) => { setEmail(e.target.value) }}
+                                placeholder="Email"
                                 className="contactInput"
-                                name="message"
+                                type="text"
+                                name="email"
                             />
-                            <button type="submit" 
-                                className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold"
-                                onClick={(e) => {onSubmit(e)}}
-                            >Envoyer </button>
+                        </div>
+                        <input
+                            onChange={(e) => { setSujet(e.target.value) }}
+                            placeholder="Sujet"
+                            className="contactInput"
+                            type="text"
+                            name="sujet"
+                        />
+                        <textarea
+                            onChange={(e) => { setMessage(e.target.value) }}
+                            placeholder="Message"
+                            className="contactInput"
+                            name="message"
+                        />
+                        <button type="submit"
+                            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold"
+                            onClick={(e) => { onSubmit(e) }}
+                        >Envoyer </button>
 
-                        </form>
+                    </form>
 
                 </div>
             </div>

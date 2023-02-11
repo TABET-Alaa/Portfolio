@@ -30,12 +30,12 @@ export default function About({}: Props): ReactElement {
                     x:0 ,
                     opacity: 1
                 }}
-                className="space-y-32 mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg 
+                className="space-y-32 -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg 
                 md:w-64 md:h-95 xl:w-[350px] xl:h-[450px]"
                 src="https://alaaddine-tabet.web.app/assets/imgAlaa2.jpg"
             />
 
-            <div className="w-[600px] px-0 md:px-10">
+            <div className="md:w-[600px] px-0 md:px-10">
                 <p className="text-base font-bold text-sm leading-loose">
                     Développeur passionné par les nouvelles technologies et l’univers du web, je suis spécialisé 
                     dans le développement web . Polyvalent, je maîtrise plusieurs langages de programmation dont

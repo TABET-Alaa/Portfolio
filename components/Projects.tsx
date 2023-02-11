@@ -8,12 +8,12 @@ interface Props {
 function Projects({ }: Props): ReactElement {
     return (
 
-        <div className="h-screen relative flex flex-col px-10 justify-evenly mx-auto items-center">
+        <div className="h-screen relative flex flex-col px-10 justify-evenly mr-[10px] items-center">
 
             <h1 className="absolute top-24 text-2xl text-gray-500 uppercase tracking-[20px]"> Projets</h1>
 
 
-            <div className="flex space-x-5 items-center ">
+            <div className="flex flex-col space-y-3  md:flex-row md:space-x-5 items-center ">
                 <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80"
                     alt=""
                     className="object-cover w-full mx-6 lg:h-72 w-1/2 rounded-xl"
@@ -33,7 +33,7 @@ function Projects({ }: Props): ReactElement {
                         </p>
                     </div>
 
-                    <div className="flex space-x-4 mt-4">
+                    <div className="flex justify-center flex-row items-center space-x-4 mt-4 ">
                         <p>Django</p>
                         <p>NextJS</p>
                         <p>Tailwind</p>

@@ -16,7 +16,7 @@ export default function Profil({}: Props): ReactElement {
     return (
         <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden ">
             <BackgroundCircles/>
-            <img className="relative rounded-full h-32 w-32 mx-auto object-cover" src="" alt=""/>
+            {/*<img className="relative rounded-full h-32 w-32 mx-auto object-cover" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Ffr%2Fphotos%2Fcasablanca&psig=AOvVaw2sk1hNphvDAcCg5AA2Pbm5&ust=1675677141816000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOjj6feN_vwCFQAAAAAdAAAAABAE" alt=""/>*/}
             <div className="z-20">
                 <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
                     Developpeur web

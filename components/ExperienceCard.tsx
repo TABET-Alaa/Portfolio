@@ -2,41 +2,99 @@ import { motion } from 'framer-motion'
 import React, { ReactElement } from 'react'
 
 interface Props {
-    
+
 }
 
-export default function ExperienceCard({}: Props): ReactElement {
+export default function ExperienceCard({ }: Props): ReactElement {
     return (
-            <article className="
-            flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px ]
-            snap-center hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
-                <motion.img 
-                    initial= {{
-                        y: -100,
-                        opacity: 0
-                    }}
-                    transition= {{duration: 1.2}}
-                    whileInView={{ opacity: 1, y:0}}
-                    viewport={{ once: true }}
-                    className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center "
-                    src="" alt=""
-                />
-                <div className="px-0 md:px-10">
-                    <h4 className="text-4xl font-light">CEO of TABET</h4>
-                    <p className="text-2xl font-bold mt-1">TABET</p>
-                    <div className="flex space-x-2 my-2 ">
-                        <img className="h-10 w-10 rounded-full" src="" alt=""/>
-                    </div>
-                    <p className="uppercase py-5 text-gray-300">started work -- Ended .. </p>
 
-                    <ul className="list-disc space-y-4 ml-5 ext-lg">
-                        <li>Summary points</li>
-                        <li>Summary points</li>
-                        <li>Summary points</li>
-                        <li>Summary points</li>
-                        <li>Summary points</li>
-                    </ul>
+        <div className="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+            {/*<span
+                className="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-red-600 md:block"
+            ></span>
+            */}
+            <div className="mt-8 flex flex-col text-center md:flex-row md:text-left">
+
+                <div className="md:w-2/5">
+                    <div className="md:-mt-1 md:pl-8">
+                        <span
+                            className="block pt-2 font-header text-xl font-bold uppercase text-gray-500 text-primary"
+                        >Frontend développeur
+                                </span>
+                        <span
+                            className="block pt-2 font-header text-xl font-bold  bg-[rgb(36,36,36)] text-primary"
+                        >Greenaftech - <span className="text-lg"> Bouskoura, Casablanca </span> 
+                                </span>
+                        <span className="block font-body font-bold text-gray-500"
+                        >Avril 2022 - Juin 2022
+                        </span>
+                    </div>
                 </div>
-            </article>
+
+                <div className="md:w-3/5">
+                    <div className="relative flex md:pl-18">
+                        {/*
+                        <span
+                            className="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
+                        ></span>
+*/}
+                        <div className="mt-1 flex">
+                            <div className="md:-mt-1 md:pl-8 pt-2">
+
+                                <span className="block font-body text-white"
+                                >J'ai participé à la réalisation d'un système de management d'énergie
+                                    en conformité avec les principes de l'Industrie 4.0. J'ai travaillé en équipe
+                                    pour intégrer des technologies telles que l'Internet des objets (IoT) et l'analyse de données pour optimiser l'utilisation de l'énergie et améliorer la production de l'entreprise.
+                                    Cette expérience m'a permis de développer mes compétences en matière de développement
+                                    de systèmes intelligents et de comprendre les enjeux de la transformation digitale en milieu industriel.
+                        </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="mt-8 flex flex-col text-center md:flex-row md:text-left">
+
+                <div className="md:w-2/5">
+                    <div className="md:-mt-1 md:pl-8">
+                        <span
+                            className="block pt-2 font-header text-xl font-bold uppercase text-gray-500 text-primary"
+                        >Développeur web
+                </span>
+                        <span
+                            className="block pt-2 font-header text-xl font-bold  bg-[rgb(36,36,36)] text-primary"
+                        >ESOFT  <span className="text-lg font-bold"> - Lille, France </span>  
+                </span>
+                        <span className="block font-body font-bold text-gray-500"
+                        >Juillet 2021 - aout 2022
+        </span>
+                    </div>
+                </div>
+
+                <div className="md:w-3/5">
+                    <div className="relative flex md:pl-18">
+                        {/*
+        <span
+            className="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
+        ></span>
+*/}
+                        <div className="mt-1 flex">
+                            <div className="md:-mt-1 md:pl-8 pt-2">
+
+                                <span className="block font-body text-white"
+                                >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
+        venenatis enim.</span
+                                >
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     )
 }
