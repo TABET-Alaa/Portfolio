@@ -42,11 +42,13 @@ export default function ExperienceCard({ }: Props): ReactElement {
                             <div className="md:-mt-1 md:pl-8 pt-2">
 
                                 <span className="block font-body text-white"
-                                >J'ai participé à la réalisation d'un système de management d'énergie
-                                    en conformité avec les principes de l'Industrie 4.0. J'ai travaillé en équipe
-                                    pour intégrer des technologies telles que l'Internet des objets (IoT) et l'analyse de données pour optimiser l'utilisation de l'énergie et améliorer la production de l'entreprise.
-                                    Cette expérience m'a permis de développer mes compétences en matière de développement
-                                    de systèmes intelligents et de comprendre les enjeux de la transformation digitale en milieu industriel.
+                                >J'ai travaillé en équipe sur la partie front-end d'une application web 
+                                de gestion d'énergie en conformité avec les principes de l'Industrie 4.0,
+                                en utilisant la technologie React et Tailwind CSS. Cette expérience m'a 
+                                permis de développer mes compétences en matière de développement d'application
+                                web, en particulier en travaillant avec ces technologies, ainsi que de 
+                                comprendre les enjeux de la transformation digitale dans un environnement 
+                                industriel.
                         </span>
 
                             </div>
@@ -83,9 +85,14 @@ export default function ExperienceCard({ }: Props): ReactElement {
                             <div className="md:-mt-1 md:pl-8 pt-2">
 
                                 <span className="block font-body text-white"
-                                >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-        venenatis enim.</span
+                                > J'ai participé à la réalisation d'une application web en tant que stagiaire,
+                                en utilisant la technologie Angular pour le frontend et Firebase comme Backend 
+                                as a Service (BaaS). Cette expérience a été très enrichissante pour moi, 
+                                car elle m'a aidé à entrer dans le monde de l'entreprise et à acquérir des 
+                                compétences techniques précieuses. Grâce à cette expérience, 
+                                j'ai appris comment travailler en équipe, gérer des projets de développement
+                                logiciel, concevoir une architecture applicative et utiliser des technologies 
+                                de pointe telles que Angular et Firebase.</span
                                 >
 
                             </div>
