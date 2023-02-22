@@ -16,7 +16,7 @@ export default function About({}: Props): ReactElement {
             whileInView={{
                 opacity: 1
             }}
-            className="flex flex-col sapce-y-12 relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
+            className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
             <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pb-[40px]">A Propos </h3>
             <motion.img 
                 initial={{
@@ -30,7 +30,7 @@ export default function About({}: Props): ReactElement {
                     x:0 ,
                     opacity: 1
                 }}
-                className="space-y-32 w-[180px] h-[200px] md:mb-0 flex-shrink-0 mt-[130px] rounded-full object-cover md:rounded-lg 
+                className="-mb-20 w-[180px] h-[200px] md:mb-0 flex-shrink-0  rounded-full object-cover md:rounded-lg 
                 md:w-64 md:h-95 xl:w-[350px] xl:h-[450px]"
                 src="https://alaaddine-tabet.web.app/assets/imgAlaa2.jpg"
             />
