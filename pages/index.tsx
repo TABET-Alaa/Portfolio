@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
       <Header />
 
-      <section id="profil" className="snap-start">
+      <section id="profil" className="snap-start ">
         <Profil />
       </section>
 
