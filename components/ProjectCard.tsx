@@ -14,7 +14,7 @@ function ProjectCard({data}: any) {
                         <div className="">
                             <p className="text-sm uppercase">{item.title}</p>
 
-                            <a href="" className="inline-block hover:underline lg:mt-8">Voir Projet {' > '} </a>
+                            <a href={item.link_github} className="inline-block hover:underline lg:mt-8">Voir Projet {' > '} </a>
 
                             <SocialIcon url={item.link_github}
                                 fgColor="gray"
