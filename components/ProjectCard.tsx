@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 
 function ProjectCard() {
     return (
-        <div className="flex flex-col  ">
+        <div className="flex flex-col ">
             <div className="flex flex-col space-y-[50px]  md:flex-row md:space-x-5 items-center ">
                 <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80"
                     alt=""
