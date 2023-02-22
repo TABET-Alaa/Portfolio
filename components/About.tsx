@@ -30,7 +30,7 @@ export default function About({}: Props): ReactElement {
                     x:0 ,
                     opacity: 1
                 }}
-                className="space-y-32 w-[180px] h-[200px] -mb-20 md:mb-0 flex-shrink-0 mt-[170px] rounded-full object-cover md:rounded-lg 
+                className="space-y-32 w-[180px] h-[200px] md:mb-0 flex-shrink-0 mt-[130px] rounded-full object-cover md:rounded-lg 
                 md:w-64 md:h-95 xl:w-[350px] xl:h-[450px]"
                 src="https://alaaddine-tabet.web.app/assets/imgAlaa2.jpg"
             />
