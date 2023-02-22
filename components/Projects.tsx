@@ -1,22 +1,17 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useEffect } from 'react'
 import ProjectCard from './ProjectCard'
+import data from '../public/data.json'
 
-interface Props {
 
-}
-
-function Projects({ }: Props): ReactElement {
+function Projects(): ReactElement {
+    console.log(data)
     return (
         <div className="relative flex flex-col px-10 justify-evenly mr-[10px] items-center">
             <h1 className="top-24 text-2xl text-gray-500 uppercase tracking-[20px] m-[60px]"> Projets</h1>
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            <ProjectCard data={data}/>
+
         </div>
     )
 }
-
-
 
 export default Projects
