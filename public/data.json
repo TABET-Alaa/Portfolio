@@ -2,7 +2,7 @@
     {
         "title": "home-app",
         "type": "Web APP",
-        "image": "../public/home-app-image.png",
+        "image": "https://github.com/TABET-Alaa/portfolio/blob/main/public/home-app-image.png?raw=true",
         "description": "Version 1 d'un Site web de location de l'immobilier (airbnb-clone) developper avec React(Typescript), NextJs ,Tailwind CSS ...",
         "link_github": "https://github.com/TABET-Alaa/home-app",
         "technologies": ["NextJS","REACT","TYPESCRIPT","TailwindCSS"]
@@ -21,6 +21,22 @@
         "image": "https://octopus.com/devops/i/x/octopus-devops-infinity.png",
         "description": "Creation d'un Pipeline sur Jenkins qui permet de tester et de construire une image docker d’une application web...",
         "link_github": "",
-        "technologies": ["Gitlab","Jenkins","Selenium WebDriver","Docker"]
+        "technologies": ["Gitlab","Jenkins","Selenium","Docker"]
+    },
+    {
+        "title": "TODO App",
+        "type": "Mobile App",
+        "image": "https://github.com/TABET-Alaa/portfolio/blob/main/public/home-app-image.png?raw=true",
+        "description": "Todo app developper avec React Native ,expo ",
+        "link_github": "https://github.com/TABET-Alaa/ToDoApp/tree/master",
+        "technologies": ["React Native"]
+    },
+    {
+        "title": "Uber clone",
+        "type": "Mobile App",
+        "image": "https://github.com/TABET-Alaa/portfolio/blob/main/public/home-app-image.png?raw=true",
+        "description": "Projet en cours ...",
+        "link_github": "https://github.com/TABET-Alaa/TMA",
+        "technologies": ["React Native","Redux","tailwind","GCP(api)"]
     }
 ]

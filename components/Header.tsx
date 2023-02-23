@@ -28,10 +28,6 @@ export default function Header({}: Props): ReactElement {
                     fgColor="gray"
                     bgColor="transparent"
                 />
-                <SocialIcon url="https://github.com/TABET-Alaa" 
-                    fgColor="gray"
-                    bgColor="transparent"
-                />
             </motion.div>
             <motion.div 
                 initial = {{x: 500, opacity: 0, scale: 0  }}
@@ -50,9 +46,9 @@ export default function Header({}: Props): ReactElement {
                     fgColor="gray"
                     bgColor="transparent"
                 />
-                <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+                <a href="#Contact" className="uppercase hidden md:inline-flex text-sm text-gray-400">
                     Contacter Moi
-                </p>
+                </a>
             </motion.div>
         </header>
     )
