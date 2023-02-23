@@ -2,7 +2,7 @@
     {
         "title": "home-app",
         "type": "Web APP",
-        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80",
+        "image": "../public/home-app-image.png",
         "description": "Version 1 d'un Site web de location de l'immobilier (airbnb-clone) developper avec React(Typescript), NextJs ,Tailwind CSS ...",
         "link_github": "https://github.com/TABET-Alaa/home-app",
         "technologies": ["NextJS","REACT","TYPESCRIPT","TailwindCSS"]
@@ -16,9 +16,9 @@
         "technologies": ["REACT","FastAPI","REDIS","TailwindCSS"]
     },
     {
-        "title": "PFE en DEVOPS(CI/CD) Encadré par Mr ZIYATI Houssaine",
+        "title": "PFE en DEVOPS(CI/CD)",
         "type": "Devops",
-        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80",
+        "image": "https://octopus.com/devops/i/x/octopus-devops-infinity.png",
         "description": "Creation d'un Pipeline sur Jenkins qui permet de tester et de construire une image docker d’une application web...",
         "link_github": "",
         "technologies": ["Gitlab","Jenkins","Selenium WebDriver","Docker"]
