@@ -44,7 +44,7 @@ export default function About({}: Props): ReactElement {
                     Pour plus de détails sur mes projets terminés, consultez mon  Github .  
                     Je sais identifier et comprendre les besoins des utilisateurs pour de meilleurs résultats.
                     <br/>
-                    Contactez -nous et nous ferons passer votre site Web au niveau supérieur !
+                   
                 </p>
             </div>
         </motion.div>
